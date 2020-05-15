@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+h1,h2,a{
+	font-family: 'Dancing Script', cursive;
+}
+
+a{
+	font-size:16px;
+}
+
+.nogi{
+	font-size:22px;
+	font-weight:bold;
+	color: #56256e;
+}
+
+.kami{
+	font-size:22px;
+	color:#ef857d;
+}
+
+.strong{
+
+	background: url(../img/angel3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.weekness{
+
+	background: url(../img/character_akuma3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.strong,.weekness{
+	background-color: aliceblue;
+}
+
+.char{
+	font-family: 'Dancing Script', cursive;
+	font-size: 32px;
+
+
+}
+
+
+
+table{
+  border-collapse:separate;
+  border-spacing: 5px;
+  width: 100%;
+}
+
+table td{
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+table td{
+  background-color: aliceblue;
+  border:solid 1px #af9d85;
+}
+
+div{
+	margin: 0 auto;
+	text-align:center;
+}
+
+.text{
+	display: inline-block;
+	text-align:left;
+}
+.myimg{
+	width:50%;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /*タッチデバイスやmacでスクロールされないようにする*/
+  overflow: hidden;
+}
+
+.idol-text{
+	display: inline-block;
+	text-align: left;
+	top:0;
+}
+
+.game-text{
+	display: inline-block;
+	text-align: left;
+	top:0;
+}
+
+.cp_cssslider {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	margin: 2em auto;
+	border: 10px solid #ffffff;
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.cp_slide_item {
+	width: 300px;
+	height: 300px;
+	float: left;
+	position: relative;
+}
+.cp_slidewrapper {
+	width: 600%;/* slideの枚数×100% */
+	position: relative;
+	left: 0;
+	animation: slider 20s infinite ease;/* スピード */
+}
+@-webkit-keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	16% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	33% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	49% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	66% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	83% {
+	-webkit-transform: translateX(-1500px);
+	transform: translateX(-1500px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+@keyframes slider {
+	/* 100%を枚数で割った%に割り振る */
+	0% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+	16% {
+	-webkit-transform: translateX(-300px);
+	transform: translateX(-300px);
+	}
+	33% {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+	}
+	49% {
+	-webkit-transform: translateX(-900px);
+	transform: translateX(-900px);
+	}
+	66% {
+	-webkit-transform: translateX(-1200px);
+	transform: translateX(-1200px);
+	}
+	83% {
+	-webkit-transform: translateX(-1500px);
+	transform: translateX(-1500px);
+	}
+	100% {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	}
+}
+
+.gameimg{
+
+	width:50%;
+}
+
+#slide {
+   position: relative;
+   max-width: 50%;
+   margin: 0 auto;
+
+}
+#slide img {
+   position: absolute;
+   top: -100;
+   left:50%;
+   z-index: 8;
+   opacity: 0.0;
+
+   -webkit-transform : translate(-50%,-50%);
+   transform : translate(-50%,-50%);
+
+}
+#slide img.active {
+   z-index: 10;
+   opacity: 1.0;
+}
+#slide img.last-active {
+   z-index: 9;
+}
